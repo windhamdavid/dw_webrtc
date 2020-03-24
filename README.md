@@ -1,24 +1,32 @@
-# SimpleWebRTC Sample Talky App
+## Talky.WebRTC
 
-To get started, you will first need to edit `public/index.html` to set your API key.
+Video / Chat / Screensharing   
+- quick webrtc setup  
+- added htaccess to protect client portals 
+- moved css for customization 
+- added ENV to pull API key 
+- replaced [https://github.com/windhamdavid/webrtc](https://github.com/windhamdavid/webrtc)  
 
-See the section marked `IMPORTANT SETUP`, and change the placeholder `YOUR_API_KEY` to be the API key you were provided.
+Fork @ [simplewebrtc/simplewebrtc-talky-sample-app](https://github.com/simplewebrtc/simplewebrtc-talky-sample-app)  
 
-You can retrieve your API key by visiting [https://accounts.simplewebrtc.com](https://accounts.simplewebrtc.com).
+---
+### API
 
-## Running
+Edit `YOUR_API_KEY`in `public/index.html`  
+Talky API -  [https://accounts.simplewebrtc.com](https://accounts.simplewebrtc.com)  
+Edit .env.demo  
+`mv .env.demo .env`
 
-1. `npm install`
-2. Edit `public/index.html` as described above.
-3. `npm start`
-4. Go to [https://localhost:8080/](https://localhost:8080)
+### Run
 
+- `npm install`
+- `npm start`
+- [https://localhost:8080/](https://localhost:8080)
 
-## Deploying to Static/Shared Hosting
+### Deploy
 
-1. `npm install`
-2. Edit `public/index.html` as described above.
-3. `npm run build`
-4. Copy the contents of the `./dist` folder to your hosting location.
-5. Ensure your hosting location is served via HTTPS.
+- `npm install`
+- `npm run build`
+- move `./dist` to host.
+- serve via HTTPS.
 
